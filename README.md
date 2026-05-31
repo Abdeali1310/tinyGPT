@@ -39,6 +39,7 @@ The training objective is next-token prediction using autoregressive language mo
 Dataset: Tiny Shakespeare
 Tokenizer: Character-level tokenizer
 Model Parameters: ~10 Million Parameters
+Dataset : 1 million character
 
 Training Metrics:
 
@@ -66,6 +67,8 @@ python gpt.py
 * train the transformer model
 * generate text samples
 
+It will create a tinygpt_model.pth file which can be loaded into inference.py
+
 You can experiment with the following hyperparameters inside `gpt.py`:
 
 * `block_size`
@@ -75,16 +78,6 @@ You can experiment with the following hyperparameters inside `gpt.py`:
 * `dropout`
 
 to create larger or smaller transformer configurations.
-
-
-## Pretrained model 
-A pretrained model is trained on the Tiny Shakespeare dataset is included in the repository(tinygpt_model.pth), so you can directly try text generation without training from scratch by running 
-
-```bash
-python inference.py
-```
-
-Training the model again will overwrite the existing checkpoint file with the newly trained weights unless you save it using a different filename.
 
 
 
