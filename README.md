@@ -79,9 +79,10 @@ to create larger or smaller transformer configurations.
 
 ## Pretrained model 
 A pretrained model is trained on the Tiny Shakespeare dataset is included in the repository(tinygpt_model.pth), so you can directly try text generation without training from scratch by running 
+
 ```bash
 python inference.py
-```.
+```
 
 Training the model again will overwrite the existing checkpoint file with the newly trained weights unless you save it using a different filename.
 
