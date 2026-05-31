@@ -79,7 +79,13 @@ You can experiment with the following hyperparameters inside `gpt.py`:
 
 to create larger or smaller transformer configurations.
 
+## Pretrained Model
+A pretrained checkpoint(model) trained on Tiny Shakespeare(input.txt) dataset can be downloaded from the [Releases](https://github.com/Abdeali1310/tinyGPT/releases/tag/v1.0) section for direct text generation and experimentation.
+You can paste that tinygpt_model.pth model file in root folder and run
 
+```bash
+python inference.py
+```
 
 ## Text Generation / Inference
 
